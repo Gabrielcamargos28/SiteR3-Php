@@ -1,8 +1,6 @@
 <?php
 session_start();
- include_once("./visao/topo.php");
 //ROTEADOR
-
 	//GET -> função que deixa variáveis explicitas na URL
 	//recebe o comportamento que será executado por GET
 	//array chamado $_GET e os índices são as variáveis
@@ -15,8 +13,7 @@ session_start();
 		$fun = $_GET["fun"];
 		
 		if($fun == "cadastrar"){
-			
-			include_once("./controle/CadastrarDestaque_class.php");
+			include_once("controle/CadastrarDestaque_class.php");
 			$pag = new CadastrarDestaque();
 			
 		} elseif($fun == "alterar"){

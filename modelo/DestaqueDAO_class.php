@@ -24,7 +24,7 @@
 				$stmt->bindValue(":titulo", $cont->getTitulo());
 				$stmt->bindValue(":texto", $cont->getTexto());
 				$stmt->bindValue(":data_criacao", $cont->getDataCriacao());
-				$stmt->bindValue(":foto", "teste");
+				$stmt->bindValue(":foto", $cont->getFoto());
 				
 				$stmt->execute(); //execução do SQL	
 				

@@ -36,11 +36,6 @@ body {
 .section-logo img {
   width: 150px;
 }
-.carrosel-img {
-  width: 432px;
-  height: 306.72px;
-  margin-bottom: 40px;
-}
 .sobre {
   display: inline-flex;
   align-items: center;
@@ -201,13 +196,19 @@ footer {
   text-align: center;
   margin-top: 5px;
 }
+.carousel-item {
+  display: flex;
+  justify-content: space-between;
+}
 .carousel-item.active {
   display: flex;
   width: 100%;
-  gap: 50px;
-  justify-content: space-evenly;
 }
 .carousel-item img {
   position: relative;
-  padding-left: 25px;
+}
+.carrosel-img {
+  width: 295px;
+  height: 205.72px;
+  margin-bottom: 40px;
 }
